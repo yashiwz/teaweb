@@ -5,6 +5,9 @@ import mobile from '@/components/mobile/mobile'
 import mIndex from '@/components/mobile/index'
 import mMoments from '@/components/mobile/moments'
 import mMe from '@/components/mobile/me'
+import mArticle from '@/components/mobile/article'
+import mReport from '@/components/mobile/report'
+import mScan from '@/components/mobile/scan'
 Vue.use(Router)
 
 export default new Router({
@@ -27,6 +30,21 @@ export default new Router({
           path: 'me',
           name: 'mMe',
           component: mMe
+        },
+        {
+          path: 'article',
+          name: 'mArticle',
+          component: mArticle
+        },
+        {
+          path: 'report',
+          name: 'mReport',
+          component: mReport
+        },
+        {
+          path: 'scan',
+          name: 'mScan',
+          component: mScan
         }
         // {
         //   path: 'list',

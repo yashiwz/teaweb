@@ -119,7 +119,7 @@
   width:90px;height:90px;
   margin:0 auto;
   border-radius:53px;
-  border:3px solid #8ac6f4;
+  border:3px solid #87e3cd;
   margin-bottom:12px;
 }
   .avatar img{
