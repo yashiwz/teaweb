@@ -375,11 +375,11 @@ input[type=file] {
   position: relative;
   color: #e3fff8;
   font-size: 27px;
-  padding: 55px 36px 40px;
+  padding: 55px 30px 40px;
   letter-spacing: 4px;
 }
 .bg-banner img{
-  width: 52px;
+  width: 50px;
   margin-right: 10px;
   opacity: .6;
 }
@@ -409,4 +409,16 @@ input[type=file] {
   border-left: 14px solid transparent;
   border-right: 14px solid transparent;
   border-bottom: 12px solid white;
+
+}
+@keyframes moveUp {
+  from {
+    top: 300px;
+    opacity: 0;
+  }
+
+  to {
+    top: 280px;
+    opacity: 1;
+  }
 }

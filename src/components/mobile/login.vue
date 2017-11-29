@@ -17,22 +17,26 @@
           <img src="/static/img/icons/password.png">
           <el-input
             placeholder="请输入密码"
-            v-model="contactphone">
+            v-model="password">
           </el-input>
         </div>
         <div class="text-right mb12">
-          <a class="forget">忘记密码</a>
+          <a class="forget" @click="showToggle">忘记密码</a>
         </div>
         <div class="mb12">
           <a class="btn theme block">登录</a>
         </div>
         <div class="mb12">
-          <a class="btn danger block">入驻申请</a>
+          <a href="#/mobile/apply" class="btn danger block">入驻申请</a>
         </div>
         <div>
           <a href="#/mobile/index" class="btn info block">返回</a>
         </div>
       </div>
+    <div class="popup text-center" v-show="isShow">
+      <p>请联系工作人员修改密码</p>
+      <a class="btn info"  @click="showToggle">关闭</a>
+    </div>
   </div>
 </template>
 
@@ -41,7 +45,18 @@
     name: 'mApply',
     data () {
       return {
-        radio: '1'
+        username: '',
+        password: '',
+        radio: '1',
+        isShow:false, //弹框
+      }
+    },
+    methods:{
+      showToggle:function(){
+        this.isShow = !this.isShow
+      },
+      handleNodeClick(data) {
+        console.log(data);
       }
     }
   }
@@ -55,5 +70,19 @@
 
   .forget{
     color:grey;
+  }
+  .popup{
+    top: 280px;
+    left: 40%;
+    margin-left: -122px;
+    position: fixed;
+    background: white;
+    padding: 30px 15px;
+    z-index: 99;
+    width: 308px;
+    -webkit-box-shadow: 0 2px 18px rgba(162, 162, 162, 0.4);
+    box-shadow: 0 2px 37px rgba(73, 144, 132, 0.3);
+    -webkit-animation: moveUp 0.4s ease;
+    animation: moveUp 0.4s ease;
   }
 </style>
