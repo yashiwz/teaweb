@@ -19,6 +19,9 @@
 .mb12{
   margin-bottom:12px;
 }
+.mt12{
+  margin-top:12px;
+}
 .mt15{
   margin-top:15px;
 }
@@ -289,7 +292,7 @@ input[type=file] {
 }
 
 .Img img{
-  width:114px;
+  width:100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;

@@ -27,54 +27,56 @@
         <div>营业执照号码：91532822329265063L</div>
         <div>食品经营许可：JY15328228882251</div>
       </section>
-      <h4 class="tt-pl mb12">企业链接</h4>
-      <a class="m-wrap flex-box" href="#">
-        <div class="m-w-a">
-          <img src="/static/img/icons/index.png">
-        </div>
-        <div class="m-w-b">
-          产品企业官网
-        </div>
-        <div class="m-w-c">
-          <i class="el-icon-arrow-right"></i>
-        </div>
-      </a>
-      <a class="m-wrap flex-box">
-        <div class="m-w-a">
-          <img src="/static/img/icons/phone.png">
-        </div>
-        <div class="m-w-b">
-          官方微官网
-        </div>
-        <div class="m-w-c">
-          <i class="el-icon-arrow-right"></i>
-        </div>
-      </a>
-      <a class="m-wrap flex-box">
-        <div class="m-w-a">
-          <img src="/static/img/icons/wechat.png">
-        </div>
-        <div class="m-w-b">
-          关注官方微信
-        </div>
-        <div class="m-w-c">
-          <i class="el-icon-arrow-right"></i>
-        </div>
-      </a>
+      <h4 class="tt-pl">企业链接</h4>
+      <div class="links">
+        <a  href="#"class="m-wrap flex-box">
+          <div class="m-w-a">
+            <img src="/static/img/icons/index.png">
+          </div>
+          <div class="m-w-b">
+            产品企业官网
+          </div>
+          <div class="m-w-c">
+            <i class="el-icon-arrow-right"></i>
+          </div>
+        </a>
+        <a class="m-wrap flex-box">
+          <div class="m-w-a">
+            <img src="/static/img/icons/phone.png">
+          </div>
+          <div class="m-w-b">
+            官方微官网
+          </div>
+          <div class="m-w-c">
+            <i class="el-icon-arrow-right"></i>
+          </div>
+        </a>
+        <a class="m-wrap flex-box">
+          <div class="m-w-a">
+            <img src="/static/img/icons/wechat.png">
+          </div>
+          <div class="m-w-b">
+            关注官方微信
+          </div>
+          <div class="m-w-c">
+            <i class="el-icon-arrow-right"></i>
+          </div>
+        </a>
+      </div>
     </div>
 
     <section class="bt_nav tab">
-      <a class="active c4" href="#/mobile/index">
-        <div class="tt">商品防伪</div>
+      <a class="active c4" href="#/mobile/product/scan">
+        <div class="tt">防伪</div>
       </a>
-      <a class="c4" href="#/mobile/moments">
+      <a class="c4" href="#/mobile/product/moment">
         <div class="tt">溯源</div>
       </a>
-      <a class="c4" href="#/mobile/me">
-        <div class="tt">我的</div>
+      <a class="c4" href="#/mobile/product/report">
+        <div class="tt">报告</div>
       </a>
-      <a class="c4" href="#/mobile/me">
-        <div class="tt">我的</div>
+      <a class="c4" href="#/mobile/product/intro">
+        <div class="tt">介绍</div>
       </a>
     </section>
   </div>
@@ -176,7 +178,7 @@
   }
   .m-w-a{
     position:absolute;
-    left: 8px;
+    left: 18px;
     top: 14px;
   }
   .m-w-a img{
@@ -184,13 +186,15 @@
   }
   .m-w-b{
     font-size: 16px;
-    padding: 12px 42px
+    padding: 12px 56px
   }
   .m-w-c{
     position: absolute;
     right: 12px;
     top: 14px;
   }
-
+  .links{
+    margin-top: 4px;
+  }
 
 </style>

@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="flex-ft">
-        <a href="#/mobile/scan"><img src="/static/img/icons/scan.png"></a>
+        <a href="#/mobile/product/scan"><img src="/static/img/icons/scan.png"></a>
       </div>
     </div>
     <section class="m-icons">
@@ -177,6 +177,8 @@ width:100%;
     line-height:34px
   }
 
-
+  .Img img{
+    width:114px;
+  }
 
 </style>

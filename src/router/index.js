@@ -7,7 +7,8 @@ import mMoments from '@/components/mobile/moments'
 import mMe from '@/components/mobile/me'
 import mArticle from '@/components/mobile/article'
 import mReport from '@/components/mobile/report'
-import mScan from '@/components/mobile/scan'
+import mScan from '@/components/mobile/product/scan'
+import mMoment from '@/components/mobile/product/moment'
 Vue.use(Router)
 
 export default new Router({
@@ -42,9 +43,14 @@ export default new Router({
           component: mReport
         },
         {
-          path: 'scan',
+          path: 'product/scan',
           name: 'mScan',
           component: mScan
+        },
+        {
+          path: 'product/moment',
+          name: 'mMoment',
+          component: mMoment
         }
         // {
         //   path: 'list',
