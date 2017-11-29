@@ -10,7 +10,7 @@
     <div class="info">
       <section class="verify">
         <!--<h4 class="tt-pl">系统认证</h4>-->
-        <div class="au_hd">
+        <div class="au_hd bg-theme">
           <img src="/static/img/verified_2.png">
           茶精灵认证系统
         </div>
@@ -130,10 +130,6 @@
    border-top-left-radius: 4px;
    border-top-right-radius: 4px;
    font-size: 18px;
-   background: #40d1ad;
-   background: -webkit-gradient(linear, left top, right top, from(#40d1ad),to(#7addc6));
-   background: linear-gradient(to right, #40d1ad 0%,#7addc6 100%);
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40d1ad', endColorstr='#7addc6',GradientType=1 );
  }
   .au_hd img{
     width: 40px;
@@ -164,6 +160,10 @@
     font-size:16px;
     margin:2px;
   }
+  .system{
+    margin:12px;
+    background: #f6f6f6;
+  }
   .system div{
     line-height: 24px;
   }
@@ -174,7 +174,7 @@
 
   }
   .m-wrap:hover, .m-wrap:focus{
-    background: #f6f6f6;
+    background: #fafafa;
   }
   .m-w-a{
     position:absolute;

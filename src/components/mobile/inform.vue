@@ -5,7 +5,7 @@
         <i class="el-icon-document"></i>
         商品信息
       </div>
-      <div class="flex-box report-l b_line">
+      <div class="flex-box inform-l b_line">
         <div class="flex-hd lt">
           商品品牌*
         </div>
@@ -13,7 +13,7 @@
           <el-input v-model="input" placeholder="请输入商品品牌"></el-input>
         </div>
       </div>
-      <div class="flex-box report-l">
+      <div class="flex-box inform-l">
         <div class="flex-hd lt">
           商品型号*
         </div>
@@ -25,7 +25,7 @@
         <i class="el-icon-picture"></i>
         商品图片
       </div>
-      <div class="report-l">
+      <div class="inform-l">
         <div class="upload-pl">
           <el-upload
             action="https://jsonplaceholder.typicode.com/posts/"
@@ -39,16 +39,16 @@
           </el-dialog>
         </div>
         <div class="upload-pl">
-            <el-upload
-              action="https://jsonplaceholder.typicode.com/posts/"
-              list-type="picture-card"
-              :on-preview="handlePictureCardPreview"
-              :on-remove="handleRemove">
-              <i class="el-icon-plus"></i>
-            </el-upload>
-            <el-dialog :visible.sync="dialogVisible" size="tiny">
-              <img width="100%" :src="dialogImageUrl" alt="">
-            </el-dialog>
+          <el-upload
+            action="https://jsonplaceholder.typicode.com/posts/"
+            list-type="picture-card"
+            :on-preview="handlePictureCardPreview"
+            :on-remove="handleRemove">
+            <i class="el-icon-plus"></i>
+          </el-upload>
+          <el-dialog :visible.sync="dialogVisible" size="tiny">
+            <img width="100%" :src="dialogImageUrl" alt="">
+          </el-dialog>
         </div>
         <div class="upload-pl">
           <el-upload
@@ -67,7 +67,7 @@
         <i class="el-icon-info"></i>
         举报人及举报内容
       </div>
-      <div class="flex-box report-l b_line">
+      <div class="flex-box inform-l b_line">
         <div class="flex-hd lt">
           举报人*
         </div>
@@ -75,7 +75,7 @@
           <el-input v-model="input" placeholder="请输入举报人"></el-input>
         </div>
       </div>
-      <div class="flex-box report-l b_line">
+      <div class="flex-box inform-l b_line">
         <div class="flex-hd lt">
           联系邮箱
         </div>
@@ -83,7 +83,7 @@
           <el-input v-model="input" placeholder="请输入举报联系邮箱"></el-input>
         </div>
       </div>
-      <div class="flex-box report-l b_line">
+      <div class="flex-box inform-l b_line">
         <div class="flex-hd lt">
           电话*
         </div>
@@ -91,7 +91,7 @@
           <el-input v-model="input" placeholder="请输入举报人电话"></el-input>
         </div>
       </div>
-      <div class="report-l" style="margin:12px">
+      <div class="inform-l" style="margin:12px">
         <el-input
           type="textarea"
           :autosize="{ minRows: 2, maxRows: 4}"
@@ -108,7 +108,7 @@
 
 <script>
   export default {
-    name: 'mReport',
+    name: 'mInform',
     data () {
       return {
         dialogImageUrl: '',
@@ -151,7 +151,7 @@
     padding: 8px 0;
     margin-bottom: 3px;
   }
-  .report-l{
+  .inform-l{
     margin:5px 12px;
   }
   .submit{
@@ -163,9 +163,9 @@
   .b_line{
     border-bottom: 1px solid #f1f1f1;
   }
-  .report-l .upload-pl{
+  .inform-l .upload-pl{
     margin:12px 0;
-    width:90px;
+    width: 96px;
     display:inline-block;
   }
 </style>

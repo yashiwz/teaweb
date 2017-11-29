@@ -1,7 +1,8 @@
 <template>
   <div class="m-main">
-    <div class="avatar-pl">
-      <div class="avatar"><img src="/static/img/head_img.png"></div>
+    <div class="avatar-pl bg-theme">
+      <div class="avatar"><img src="/static/img/product/1-1FI1115QB02.png"></div>
+      <div class="text-center">巅味号</div>
     </div>
     <div class="moment">
       <h4 class="tt-pl">新动态</h4>
@@ -22,22 +23,23 @@
         </div>
         <div class="comment">
           <div class="reply">
-            <span class="user">游客1</span>
+            <span class="user">阿猫</span>
             听君一席话，胜读十年书。
           </div>
           <div class="reply">
-            <span class="user">游客1</span>
+            <span class="user">阿狗</span>
             回复
-            <span class="user">游客1</span>
-            英雄所见略同
+            <span class="user">阿猫</span>
+            英雄所见略同！
           </div>
+
         </div>
       </div>
       <!--循环分隔-->
       <div>
-        <div class="date">2017-11-29</div>
+        <div class="date">2017-11-20</div>
         <div class="content">
-          <div class="msg">中国历史上有很长的饮茶纪录，在世界上的很多地方饮茶的习惯是从中国传过去的。</div>
+          <div class="msg">饮茶不但是传统饮食文化,同时,由于茶中含有多种抗氧化物质与抗氧化营养素,对于消除自由基有一定的效果。</div>
           <div class="pic">
             <div class="Img" v-for="Img in Imgs" :key="Img.id">
               <img :src="Img.imgUrl">
@@ -50,14 +52,14 @@
         </div>
         <div class="comment">
           <div class="reply">
-            <span class="user">游客1</span>
+            <span class="user">阿猫</span>
             听君一席话，胜读十年书。
           </div>
           <div class="reply">
-            <span class="user">游客1</span>
+            <span class="user">阿狗</span>
             回复
-            <span class="user">游客1</span>
-            英雄所见略同
+            <span class="user">阿猫</span>
+            英雄所见略同！
           </div>
         </div>
       </div>
@@ -88,23 +90,23 @@
         Imgs: [
           {
             id: 1,
-            imgUrl: '/static/img/article/1400w_x1400h_ftbreakfast0006.jpg'
+            imgUrl: '/static/img/product/4-1FQ31K023.png'
           },
           {
             id: 2,
-            imgUrl: '/static/img/article/0255a4d243e83e3be7464ca1b348ea95.jpg'
+            imgUrl: '/static/img/product/4-1FQ31K025.png'
           },
           {
             id: 3,
-            imgUrl: '/static/img/article/87c985531c3e166d7965e19ff544957e.jpg'
+            imgUrl: '/static/img/product/4-1FQ31K026.png'
           },
           {
             id: 4,
-            imgUrl: '/static/img/article/shutterstock_95477803.jpg'
+            imgUrl: '/static/img/product/4-1FQ31K028.png'
           },
           {
             id: 5,
-            imgUrl: '/static/img/article/Chinese-Tea-Culture1-700x325.jpg'
+            imgUrl: '/static/img/product/4-1FQ31K029.png'
           }
         ]
       }
@@ -161,6 +163,9 @@
     padding:12px;
     color:#666666;
   }
+  .moment .btns a:hover, .moment .btns a:focus{
+    color: #0ccfb0;
+  }
   .moment .btns a span{
     color:#fa5555;
   }
@@ -175,5 +180,23 @@
   }
   .reply{
     line-height:26px;
+  }
+  .avatar-pl{
+    padding: 20px 12px 15px;
+    color: white;
+    font-size: 18px;
+  }
+  .avatar{
+    box-shadow: 0 1px 24px rgba(0, 0, 0, 0.17);
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid #6cdac0;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  .avatar img{
+    width: 100%;
   }
 </style>

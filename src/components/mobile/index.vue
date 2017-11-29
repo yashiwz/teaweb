@@ -22,11 +22,11 @@
       </div>
     </div>
     <section class="m-icons">
-      <a class="c3" href="#/mobile/report">
+      <a class="c3" href="#/mobile/inform">
         <img src="/static/img/icons/report.jpg">
         <div class="tt">打假举报</div>
       </a>
-      <a class="c3" href="#/mobile/report">
+      <a class="c3" href="#/mobile/apply">
         <img src="/static/img/icons/add.jpg">
         <div class="tt">入驻申请</div>
       </a>

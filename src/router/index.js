@@ -6,9 +6,13 @@ import mIndex from '@/components/mobile/index'
 import mMoments from '@/components/mobile/moments'
 import mMe from '@/components/mobile/me'
 import mArticle from '@/components/mobile/article'
-import mReport from '@/components/mobile/report'
+import mInform from '@/components/mobile/inform'
 import mScan from '@/components/mobile/product/scan'
 import mMoment from '@/components/mobile/product/moment'
+import mReport from '@/components/mobile/product/report'
+import mIntro from '@/components/mobile/product/intro'
+import mApply from '@/components/mobile/apply'
+import mLogin from '@/components/mobile/login'
 Vue.use(Router)
 
 export default new Router({
@@ -38,9 +42,9 @@ export default new Router({
           component: mArticle
         },
         {
-          path: 'report',
-          name: 'mReport',
-          component: mReport
+          path: 'inform',
+          name: 'mInform',
+          component: mInform
         },
         {
           path: 'product/scan',
@@ -51,6 +55,26 @@ export default new Router({
           path: 'product/moment',
           name: 'mMoment',
           component: mMoment
+        },
+        {
+          path: 'product/report',
+          name: 'mReport',
+          component: mReport
+        },
+        {
+          path: 'product/intro',
+          name: 'mIntro',
+          component: mIntro
+        },
+        {
+          path: 'apply',
+          name: 'mApply',
+          component: mApply
+        },
+        {
+          path: 'login',
+          name: 'mLogin',
+          component: mLogin
         }
         // {
         //   path: 'list',
