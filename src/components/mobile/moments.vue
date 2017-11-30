@@ -7,11 +7,11 @@
         <img src="/static/img/icons/n_sch.png">
         <div class="tt">商品防伪</div>
       </a>
-      <a class="c3 active" href="#/mobile/moments">
+      <a class="c3 active">
         <img src="/static/img/icons/n_moments_g.png">
         <div class="tt">溯源</div>
       </a>
-      <a class="c3" href="#/mobile/me">
+      <a class="c3" href="#/mobile/login">
         <img src="/static/img/icons/n_user.png">
         <div class="tt">我的</div>
       </a>

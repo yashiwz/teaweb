@@ -12,8 +12,8 @@
 
               <span>品牌</span> 勐海巅味号茶业<br>
               <span>产地</span> 云南省 <span>年份</span> 2016<br>
-              <span>工艺</span> 离地发酵<br>
-              <span>茶性</span> 熟普<br>
+              <span>工艺</span> 离地发酵<span>茶性</span> 熟普<br>
+
               <span>扫描次数</span> <span class="time">13938</span> 次<br>
               <span>自定义</span> 自定义 <br>
             </div>
@@ -87,28 +87,7 @@
   .m-main{
     margin-top:0;
   }
-  .intro-top{
-    color:white;
-    font-size:15px;
-  }
-  .intro-top img{
-      width:100px;
-    margin-top:8px
-  }
 
-  .product-tt{
-    font-size:16px;
-    padding:8px 0;
-  }
-  .intro-top .flex-bd span{
-    color:rgba(255, 255, 255, 0.84);
-    margin-left:12px;
-    font-size:13px;
-  }
-  .time{
-    font-weight: bold;
-    margin:0 4px !important;
-  }
   .intro .Img{
     display:inline-block;
     width: 24vw;

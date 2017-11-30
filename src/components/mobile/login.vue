@@ -1,5 +1,5 @@
 <template>
-  <div class="m-main">
+  <div class="m-main login-pg">
       <div class="bg-banner bg-theme">
           <img src="/static/img/icons/applylogo.png">
         企业登录入口
@@ -23,16 +23,17 @@
         <div class="text-right mb12">
           <a class="forget" @click="showToggle">忘记密码</a>
         </div>
-        <div class="mb12">
-          <a class="btn theme block">登录</a>
-        </div>
-        <div class="mb12">
-          <a href="#/mobile/apply" class="btn danger block">入驻申请</a>
-        </div>
-        <div>
-          <a href="#/mobile/index" class="btn info block">返回</a>
+        <div class="">
+          <a class="btn theme block" href="#/mobile/me">登录</a>
         </div>
       </div>
+
+    <section class="bt_nav p12">
+      <div class="text-right">没有账号？
+        <a href="#/mobile/apply" class="btn danger">申请入驻</a>
+        <a href="#/mobile/index" class="btn info">返回</a>
+      </div>
+    </section>
     <div v-show="isShow">
       <div class="cover"></div>
       <div class="popup text-center" >
@@ -96,5 +97,11 @@
     right:0;
     left:0;
     background:rgba(10, 45, 39, 0.4);
+  }
+  .login-pg .apply{
+    /*margin: 0 12px;*/
+  }
+  .login-pg .bt_nav .danger{
+    margin:0 8px;
   }
 </style>

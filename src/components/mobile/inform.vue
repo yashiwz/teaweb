@@ -100,7 +100,7 @@
         </el-input>
       </div>
       <div class="submit">
-        <a class="btn theme">举报</a>
+        <a class="btn theme" href="#/mobile/index">举报</a>
       </div>
     </section>
   </div>

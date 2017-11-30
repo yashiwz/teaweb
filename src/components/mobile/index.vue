@@ -52,7 +52,7 @@
       </div>
     </section>
     <section class="bt_nav">
-      <a class="c3 active" href="#/mobile/index">
+      <a class="c3 active">
         <img src="/static/img/icons/n_sch_g.png">
         <div class="tt">商品防伪</div>
       </a>
@@ -60,7 +60,7 @@
         <img src="/static/img/icons/n_moments.png">
         <div class="tt">溯源</div>
       </a>
-      <a class="c3" href="#/mobile/me">
+      <a class="c3" href="#/mobile/login">
         <img src="/static/img/icons/n_user.png">
         <div class="tt">我的</div>
       </a>

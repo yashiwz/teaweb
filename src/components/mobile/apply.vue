@@ -27,9 +27,9 @@
         </div>
         <div class="text-center mb20" style="color:grey;">提交申请后将有专人与您联系</div>
         <div class=" mb12">
-          <a class="btn theme block">提交申请</a>
+          <a class="btn theme block" href="#/mobile/index">提交申请</a>
         </div>
-        <div class="text-center">已申请入驻？<a href="#/mobile/login" class="a-text">登录</a></div>
+        <div class="text-center">已入驻？<a href="#/mobile/login" class="a-text">登录</a></div>
       </div>
   </div>
 </template>

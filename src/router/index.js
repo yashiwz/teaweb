@@ -13,6 +13,7 @@ import mReport from '@/components/mobile/product/report'
 import mIntro from '@/components/mobile/product/intro'
 import mApply from '@/components/mobile/apply'
 import mLogin from '@/components/mobile/login'
+import mDetail from '@/components/mobile/detail'
 Vue.use(Router)
 
 export default new Router({
@@ -75,43 +76,12 @@ export default new Router({
           path: 'login',
           name: 'mLogin',
           component: mLogin
+        },
+        {
+          path: 'detail',
+          name: 'mDetail',
+          component: mDetail
         }
-        // {
-        //   path: 'list',
-        //   name: 'mList',
-        //   component: mList
-        // },
-        // {
-        //   path: 'product',
-        //   name: 'mProduct',
-        //   component: mProduct
-        // },
-        // {
-        //   path: 'cart',
-        //   name: 'mCart',
-        //   component: mCart
-        // },
-
-        // {
-        //   path: 'orders',
-        //   name: 'mOrders',
-        //   component: mOrders
-        // },
-        // {
-        //   path: 'orderdetail',
-        //   name: 'mOrderdetail',
-        //   component: mOrderdetail
-        // },
-        // {
-        //   path: 'orderstart',
-        //   name: 'mOrderstart',
-        //   component: mOrderstart
-        // },
-        // {
-        //   path: 'orderconfirm',
-        //   name: 'mOrderconfirm',
-        //   component: mOrderconfirm
-        // }
       ]
     }
   ]
