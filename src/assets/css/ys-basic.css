@@ -138,13 +138,21 @@ a.theme{
   border-color:#0ccfb0;
   color: #fff;
 }
+a.theme.plain{
+  color:#0ccfb0;
+  background-color:white;
+}
+a.plain.theme:hover{
+  background: #0ccfb0;
+  color: #fff;
+}
 a.round{
   border-radius: 20px;
 }
 a.plain{
 
 }
-a.plain:hover{
+a.plain.primary:hover{
   background: #409EFF;
   border-color: #409EFF;
   color: #fff;
@@ -524,4 +532,15 @@ input[type=file] {
 .intro-top .time{
   font-weight: bold;
   margin:0 4px !important;
+}
+.noti_bubble {
+  line-height: 18px;
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  padding: 0 5.2px 0 5.2px;
+  background-color: #fa5555;
+  color: white;
+  border-radius: 18px;
+  font-size:12px;
 }

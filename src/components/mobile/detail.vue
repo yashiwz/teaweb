@@ -19,13 +19,18 @@
     </div>
 
     <div class="moment">
+      <div class="msg-pl">
+        <a class="btn plain theme">消息列表
+          <div class="noti_bubble">3</div>
+        </a>
+      </div>
       <div>
         <div class="date">
           今天
         </div>
-        <div>
-
-        </div>
+        <a class="new-moment-pl">
+          <img src="/static/img/icons/camera.png">
+        </a>
       </div>
 
       <div> <!--一条朋友圈 start-->
@@ -128,5 +133,25 @@
   .moment .reply a.stat:hover{
    color: black;
     text-decoration: none;
+  }
+  .new-moment-pl{
+    display: inline-block;
+    margin: 0 0 0 25px;
+    width: 74px;
+    height: 70px;
+    background: #0ccfb0;
+    padding: 14px;
+  }
+  .new-moment-pl img{
+      width:100%;
+  }
+  .msg-pl{
+    text-align: center;
+    padding:12px 0 0;
+  }
+  .msg-pl a{
+    position: relative;
+    display:inline-block;
+    padding:10px 16px 10px 12px;
   }
 </style>
