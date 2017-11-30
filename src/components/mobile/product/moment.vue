@@ -134,7 +134,7 @@
   .moment .content{
     margin:0 12px 12px;
     padding-left: 6px;
-    border-left: 1px solid #d6d6d6;
+    border-left: 1px solid #e5e5e5;
   }
   .moment .msg{
     font-size:15px;

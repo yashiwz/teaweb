@@ -1,78 +1,67 @@
 <template>
   <div class="m-me">
-    <section class="m-me-main">
-          <div class="avatar"><img src="/static/img/head_img.png"></div>
-      <!--已登录-->
-          <!--<div>用户 1553216425615</div>-->
-
-      <!--未登录-->
-          <div>Hi ！</div>
-          <div class="p12">
-            <el-button type="primary" plain>登录</el-button>
-            <el-button type="success" plain>注册</el-button>
+    <div class="flex-box p12">
+      <div class="flex-bd">
+        <div class="sch">
+          <el-input
+            placeholder="请输入正品名称"
+            prefix-icon="el-icon-search"
+            v-model="searchString">
+          </el-input>
+        </div>
+      </div>
+      <div class="flex-ft">
+        <a class="btn theme">搜索</a>
+      </div>
+    </div>
+    <section>
+      <el-collapse accordion v-model="activeNames">
+        <el-collapse-item title="A系列" name="1">
+          <div class="cart-pl" v-for="article in articles" :key="article.id">
+            <a class="flex-box" href="#/mobile/article">
+              <div class="flex-hd">
+                <div class="Img">
+                  <img :src="article.imgUrl">
+                </div>
+              </div>
+              <div class="flex-bd">
+                <p class="tt">{{article.title}}</p>
+                <p class="ss">{{article.date}}</p>
+              </div>
+            </a>
           </div>
-      <!-- -->
-    </section>
-    <section class="links">
-      <a class="m-wrap flex-box"  href="#/mobile/orders">
-        <div class="m-w-a">
-          <img src="/static/img/n_order.png">
-        </div>
-        <div class="m-w-b">
-          全部订单
-        </div>
-        <div class="m-w-c">
-          <i class="el-icon-arrow-right"></i>
-        </div>
-      </a>
-      <div class="order-nav p12">
-        <a class="c4 active" href="#/mobile/orders">
-          <img src="/static/img/od_nv_1.png">
-          <div class="tt">待付款</div>
-        </a>
-        <a class="c4" href="#/mobile/orders">
-          <img src="/static/img/od_nv_2.png">
-          <div class="tt">待处理</div>
-        </a>
-        <a class="c4" href="#/mobile/orders">
-          <img src="/static/img/od_nv_3.png">
-          <div class="tt">问题单</div>
-        </a>
-        <a class="c4" href="#/mobile/orders">
-          <img src="/static/img/od_nv_4.png">
-          <div class="tt">已完成</div>
-        </a>
-      </div>
-      <div class="m-wrap flex-box">
-        <div class="m-w-a">
-          <img src="/static/img/balance.png">
-        </div>
-        <div class="m-w-b">
-          账户余额
-        </div>
-        <div class="m-w-c">
-          <i class="el-icon-arrow-right"></i>
-        </div>
-      </div>
-      <a class="m-wrap flex-box" href="tel:+40012341234">
-        <div class="m-w-a">
-          <img src="/static/img/service.png">
-        </div>
-        <div class="m-w-b">
-          联系客服
-        </div>
-        <div class="m-w-c">
-          400-1234-1234
-        </div>
-      </a>
-      <a class="m-wrap flex-box">
-        <div class="m-w-a">
-          <img src="/static/img/user.png">
-        </div>
-        <div class="m-w-b">
-          退出登录
-        </div>
-      </a>
+        </el-collapse-item>
+        <el-collapse-item title="B系列" name="2">
+          <div class="cart-pl" v-for="article in articles" :key="article.id">
+            <a class="flex-box" href="#/mobile/article">
+              <div class="flex-hd">
+                <div class="Img">
+                  <img :src="article.imgUrl">
+                </div>
+              </div>
+              <div class="flex-bd">
+                <p class="tt">{{article.title}}</p>
+                <p class="ss">{{article.date}}</p>
+              </div>
+            </a>
+          </div>
+        </el-collapse-item>
+        <el-collapse-item title="C系列" name="3">
+          <div class="cart-pl" v-for="article in articles" :key="article.id">
+            <a class="flex-box" href="#/mobile/article">
+              <div class="flex-hd">
+                <div class="Img">
+                  <img :src="article.imgUrl">
+                </div>
+              </div>
+              <div class="flex-bd">
+                <p class="tt">{{article.title}}</p>
+                <p class="ss">{{article.date}}</p>
+              </div>
+            </a>
+          </div>
+        </el-collapse-item>
+      </el-collapse>
     </section>
     <section class="bt_nav">
       <a class="c3" href="#/mobile/index">
@@ -96,74 +85,36 @@
     name: 'mMe',
     data () {
       return {
-
+        searchString: '',
+        activeNames: ['1'],
+        articles: [
+          {
+            id: 1,
+            title:'专业的新型防伪防窜货平台，满足企业所需，解决发展中遇到的假货、窜货难题。',
+            date:'2017-11-28 09:40:58',
+            imgUrl: '/static/img/article/tea-cup.jpg'
+          },
+          {
+            id: 2,
+            title:'中国茶叶出口态势良好实现同比增长',
+            date:'201711-27 07:40:58',
+            imgUrl: '/static/img/article/87c985531c3e166d7965e19ff544957e.jpg'
+          },
+          {
+            id: 3,
+            title:'金骏眉的独特功效|金骏眉的功效与作',
+            date:'2017-11-26 07:40:58',
+            imgUrl: '/static/img/article/1400w_x1400h_ftbreakfast0006.jpg'
+          }
+        ]
       }
     }
   }
 </script>
 
 <style scoped>
-.m-me-main{
-  text-align: center;
-  padding: 40px 0 15px;
-  font-weight: bold;
-  /*background:white;*/
-  color:white;
-  background: #40d1ad; /* Old browsers */
-  background: -moz-linear-gradient(left, #40d1ad 0%, #7addc6 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #40d1ad 0%,#7addc6 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #40d1ad 0%,#7addc6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40d1ad', endColorstr='#7addc6',GradientType=1 ); /* IE6-9 */
-}
-.avatar{
-  width:90px;height:90px;
-  margin:0 auto;
-  border-radius:53px;
-  border:3px solid #87e3cd;
-  margin-bottom:12px;
-}
-  .avatar img{
-    width:100%;
+  .Img img{
+    width:114px;
   }
 
- .m-me .links{
-  background:white;
-}
-  .m-wrap{
-    position: relative;
-    border-bottom: 1px solid #f4f4f4;
-
-  }
-  .m-wrap:hover, .m-wrap:focus{
-    background: #f6f6f6;
-  }
-  .m-w-a{
-    position:absolute;
-    left: 8px;
-    top: 12px;
-  }
-  .m-w-a img{
-    width: 26px;
-  }
-  .m-w-b{
-    font-size: 16px;
-    padding: 12px 49px;
-  }
-  .m-w-c{
-    position: absolute;
-    right: 12px;
-    top: 14px;
-  }
-.links .order-nav{
-  border-bottom: 1px solid #f4f4f4;
-}
-.links .order-nav .c4{
-  text-align:center;
-}
-.links .order-nav .c4 img{
-    width:32px;
-  margin-bottom: 8px;
-  }
-.links .order-nav .tt{
-}
 </style>

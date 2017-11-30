@@ -26,9 +26,10 @@
           <el-radio v-model="radio" label="3">零售商</el-radio>
         </div>
         <div class="text-center mb20" style="color:grey;">提交申请后将有专人与您联系</div>
-        <div>
+        <div class=" mb12">
           <a class="btn theme block">提交申请</a>
         </div>
+        <div class="text-center">已申请入驻？<a href="#/mobile/login" class="a-text">登录</a></div>
       </div>
   </div>
 </template>
@@ -49,5 +50,7 @@
   .m-main{
     margin-top:0;
   }
-
+  .a-text{
+    color:#0ccfb0;
+  }
 </style>

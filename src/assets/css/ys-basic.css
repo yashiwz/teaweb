@@ -78,6 +78,10 @@
 .el-input__inner{
   height: 36px !important;
 }
+.el-input__inner:hover{
+  border-color:#0ccfb0;
+}
+
 .block{
   display:block !important;
 }
@@ -366,9 +370,7 @@ input[type=file] {
   /* border-bottom: 1px solid #5dd7b9; */
   background-color: white;
 }
-.apply .el-input__inner:hover{
-  border-color:#0ccfb0;
-}
+
 
 
 .bg-banner{
@@ -421,4 +423,17 @@ input[type=file] {
     top: 280px;
     opacity: 1;
   }
+}
+
+.m-me .el-input__inner {
+  height: 40px !important;
+}
+.m-me .sch{
+  margin-right:10px;
+}
+.m-me .el-collapse-item__header {
+  padding: 0 15px;
+}
+.el-collapse-item.is-active .el-collapse-item__header{
+  background:#f6f6f6;
 }

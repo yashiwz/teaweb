@@ -15,7 +15,7 @@
         </div>
         <div class="sch">
           <img src="/static/img/icons/password.png">
-          <el-input
+          <el-input type="password"
             placeholder="请输入密码"
             v-model="password">
           </el-input>
@@ -33,9 +33,12 @@
           <a href="#/mobile/index" class="btn info block">返回</a>
         </div>
       </div>
-    <div class="popup text-center" v-show="isShow">
-      <p>请联系工作人员修改密码</p>
-      <a class="btn info"  @click="showToggle">关闭</a>
+    <div v-show="isShow">
+      <div class="cover"></div>
+      <div class="popup text-center" >
+        <p>请联系工作人员修改密码</p>
+        <a class="btn info"  @click="showToggle">关闭</a>
+      </div>
     </div>
   </div>
 </template>
@@ -84,5 +87,14 @@
     box-shadow: 0 2px 37px rgba(73, 144, 132, 0.3);
     -webkit-animation: moveUp 0.4s ease;
     animation: moveUp 0.4s ease;
+  }
+  .cover{
+    position:fixed;
+    z-index:98;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(10, 45, 39, 0.4);
   }
 </style>
