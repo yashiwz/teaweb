@@ -1,7 +1,7 @@
 <template>
   <div class="m-main">
     <section class="article-pl">
-        <h5>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h5>
+        <h4>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h4>
         <div class="date">2017-11-26 07:40:58</div>
         <div class="article">
           <div>新华社武汉11月5日电（记者 梁建强）中国茶叶流通协会会长王庆5日透露，中国茶叶出口态势良好，其中，2016年度的统计数据显示，出口总量以及出口总价值均实现同比增长。
@@ -46,13 +46,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .m-main{
-    margin-top:0;
-  }
-  h5{
-    line-height: 20px;
-    font-size: 15px;
-    font-weight: bold;
+
+  h4{
+    line-height: 24px;
+    /*font-weight: bold;*/
   }
   .article-pl{
     background:white;
@@ -61,6 +58,9 @@
   .date{
     color:#afafaf;
     margin-bottom:12px;
+  }
+  .article{
+    font-size:16px;
   }
   .article img{
     width:100%;

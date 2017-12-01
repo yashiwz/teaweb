@@ -35,8 +35,8 @@
       </div>
     </section>
     <div v-show="isShow">
-      <div class="cover"></div>
-      <div class="popup text-center" >
+      <div class="cover" @click="showToggle"></div>
+      <div class="popup mid text-center" >
         <p>请联系工作人员修改密码</p>
         <a class="btn info"  @click="showToggle">关闭</a>
       </div>
@@ -75,40 +75,8 @@
   .forget{
     color:grey;
   }
-  .popup{
-    top: 210px;
-    left: 40%;
-    margin-left: -116px;
-    position: fixed;
-    background: white;
-    padding: 30px 15px;
-    z-index: 99;
-    width: 308px;
-    -webkit-box-shadow: 0 2px 18px rgba(162, 162, 162, 0.4);
-    box-shadow: 0 2px 37px rgba(73, 144, 132, 0.3);
-    -webkit-animation: moveUp 0.4s ease;
-    animation: moveUp 0.4s ease;
-  }
-  @keyframes moveUp {
-    from {
-      top: 230px;
-      opacity: 0;
-    }
 
-    to {
-      top: 210px;
-      opacity: 1;
-    }
-  }
-  .cover{
-    position:fixed;
-    z-index:98;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    background:rgba(10, 45, 39, 0.4);
-  }
+
   .login-pg .apply{
     /*margin: 0 12px;*/
   }

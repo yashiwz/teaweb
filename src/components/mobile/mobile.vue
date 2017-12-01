@@ -33,4 +33,5 @@
   .mobile footer{
     margin-bottom: 63px;
   }
+
 </style>

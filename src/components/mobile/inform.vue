@@ -165,8 +165,8 @@
     border-bottom: 1px solid #f1f1f1;
   }
   .inform-l .upload-pl{
-    margin:12px 0;
-    width: 96px;
-    display:inline-block;
+    margin: 12px 4px;
+    /* width: 96px; */
+    display: inline-block;
   }
 </style>

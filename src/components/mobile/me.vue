@@ -117,10 +117,10 @@
 
 <style scoped>
   .Img img{
-    width: 70px;
+    width: 20vw;
   }
   .cart-pl .flex-box{
-    padding:12px;
-    height: 84px;
+    padding: 12px;
+    height: 24vw;
   }
 </style>

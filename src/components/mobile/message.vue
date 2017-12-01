@@ -3,7 +3,7 @@
 
     <section class="">
       <div class="cart-pl" v-for="message in messages" :key="message.id">
-        <a class="flex-box" href="#/mobile/article">
+        <a class="flex-box" href="#/mobile/messageDetail">
           <div class="flex-hd">
             <div class="user-avatar">
               <img :src="message.avatar">
@@ -22,20 +22,8 @@
         </a>
       </div>
     </section>
-    <section class="bt_nav">
-      <a class="c3 active">
-        <img src="/static/img/icons/n_sch_g.png">
-        <div class="tt">商品防伪</div>
-      </a>
-      <a class="c3" href="#/mobile/moments">
-        <img src="/static/img/icons/n_moments.png">
-        <div class="tt">溯源</div>
-      </a>
-      <a class="c3" href="#/mobile/login">
-        <img src="/static/img/icons/n_user.png">
-        <div class="tt">我的</div>
-      </a>
-    </section>
+    <p class="text-center pt12"><a data-v-8cffebc2="" href="#/mobile/detail" class="btn info"><i class="el-icon-arrow-left"></i> 返回</a></p>
+
   </div>
 </template>
 

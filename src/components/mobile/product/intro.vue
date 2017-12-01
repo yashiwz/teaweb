@@ -23,7 +23,7 @@
     <div class="intro">
 
       <div>
-        <div class="st"><img src="/static/img/icons/tea.png"> 第1泡</div>
+        <div class="st"><img src="/static/img/icons/tea.png">第1泡</div>
         <div>所谓“一泡水”就是指洗涤茶叶xxxx</div>
         <div class="pic">
           <div class="Img" v-for="Img in Imgs" :key="Img.id">
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div>
-        <div class="st"><img src="/static/img/icons/tea.png"> 第1泡</div>
+        <div class="st"><img src="/static/img/icons/tea.png">第2泡</div>
         <div>所谓“一泡水”就是指洗涤茶叶xxxx</div>
         <div class="pic">
           <div class="Img" v-for="Img in Imgs" :key="Img.id">
@@ -84,9 +84,6 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .m-main{
-    margin-top:0;
-  }
 
   .intro .Img{
     display:inline-block;
@@ -98,9 +95,10 @@
   .intro{
     padding:12px;
     background:white;
+    font-size: 16px;
   }
   .intro .st{
-    margin-top: 8px;
+    margin: 12px 0 5px;
     font-size:18px;
     line-height: 30px;
   }

@@ -8,7 +8,7 @@
       <h4 class="tt-pl">新动态</h4>
 
       <div><!--一条朋友圈start-->
-        <div class="date">2017-11-29</div>
+        <div class="bigdate">2017-11-29</div>
         <div class="content">
             <div class="msg">中国历史上有很长的饮茶纪录，在世界上的很多地方饮茶的习惯是从中国传过去的。</div>
             <div class="pic">
@@ -18,14 +18,14 @@
             </div>
         </div>
         <div class="btns">
-          <a class="lk"><img src="/static/img/icons/lk.png">点赞 (<span>15</span>)</a>
+          <a class="lk" v-on:click="likes += 1"><img src="/static/img/icons/lk.png">赞 (<span>{{ likes }}</span>)</a>
           <a class="re"> <img src="/static/img/icons/re.png">回复</a>
         </div>
         <div class="comment">
           <div class="reply">
             <span class="user tx-thm">阿猫</span>
             听君一席话，胜读十年书。
-          </div>
+          </div><br>
           <div class="reply">
             <span class="user tx-thm">阿狗</span>
             回复
@@ -37,7 +37,7 @@
 
 
       <div><!--一条朋友圈start-->
-        <div class="date">2017-11-20</div>
+        <div class="bigdate">2017-11-20</div>
         <div class="content">
           <div class="msg">饮茶不但是传统饮食文化,同时,由于茶中含有多种抗氧化物质与抗氧化营养素,对于消除自由基有一定的效果。</div>
           <div class="pic">
@@ -47,14 +47,14 @@
           </div>
         </div>
         <div class="btns">
-          <a class="lk"><img src="/static/img/icons/lk.png">点赞 (<span>5</span>)</a>
+          <a class="lk" v-on:click="likes += 1"><img src="/static/img/icons/lk.png">赞 (<span>{{ likes }}</span>)</a>
           <a class="re"> <img src="/static/img/icons/re.png">回复</a>
         </div>
         <div class="comment">
           <div class="reply">
             <span class="user tx-thm">阿猫</span>
             听君一席话，胜读十年书。
-          </div>
+          </div><br>
           <div class="reply">
             <span class="user tx-thm">阿狗</span>
             回复
@@ -87,6 +87,7 @@
     name: 'mMoment',
     data () {
       return {
+        likes: 30,//点赞
         Imgs: [
           {
             id: 1,
@@ -140,5 +141,8 @@
   }
   .avatar img{
     width: 100%;
+  }
+  .moment .content {
+    /*border-left: 1px solid #e5e5e5;*/
   }
 </style>
