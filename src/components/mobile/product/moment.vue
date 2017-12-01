@@ -23,13 +23,13 @@
         </div>
         <div class="comment">
           <div class="reply">
-            <span class="user">阿猫</span>
+            <span class="user tx-thm">阿猫</span>
             听君一席话，胜读十年书。
           </div>
           <div class="reply">
-            <span class="user">阿狗</span>
+            <span class="user tx-thm">阿狗</span>
             回复
-            <span class="user">阿猫</span>
+            <span class="user tx-thm">阿猫</span>
             英雄所见略同！
           </div>
         </div>
@@ -52,13 +52,13 @@
         </div>
         <div class="comment">
           <div class="reply">
-            <span class="user">阿猫</span>
+            <span class="user tx-thm">阿猫</span>
             听君一席话，胜读十年书。
           </div>
           <div class="reply">
-            <span class="user">阿狗</span>
+            <span class="user tx-thm">阿狗</span>
             回复
-            <span class="user">阿猫</span>
+            <span class="user tx-thm">阿猫</span>
             英雄所见略同！
           </div>
         </div>

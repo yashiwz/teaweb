@@ -139,7 +139,7 @@
     color: grey;
     font-size: 16px;
     padding: 8px 12px;
-    background: #f2f2f2;
+    background: #f6f6f6;
   }
   .subtitle i{
     margin-right: 5px;
@@ -147,9 +147,10 @@
     color: #c1c1c1;
   }
   .lt{
-    min-width: 58px;
+    width: 76px;
     padding: 8px 0;
     margin-bottom: 3px;
+    font-size: 16px;
   }
   .inform-l{
     margin:5px 12px;

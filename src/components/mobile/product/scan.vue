@@ -18,7 +18,7 @@
           <div class="logo"><img src="/static/img/product/1-1FI1115QB02.png"></div>
           <div>此产品是<span class="pd">勐海巅味号茶业有限公司</span>出品</div>
           <div>【享系列】享时光</div>
-          <div>防伪信息第<span class="tm">333</span>次扫描查询</div>
+          <div>防伪信息第<span class="tm tx-thm">333</span>次扫描查询</div>
         </div>
       </section>
       <h4 class="tt-pl">系统认证</h4>
@@ -29,7 +29,7 @@
       </section>
       <h4 class="tt-pl">企业链接</h4>
       <div class="links">
-        <a  href="#"class="m-wrap flex-box">
+        <a  href="http://www.dwhtea.com/"class="m-wrap flex-box">
           <div class="m-w-a">
             <img src="/static/img/icons/index.png">
           </div>
@@ -40,7 +40,7 @@
             <i class="el-icon-arrow-right"></i>
           </div>
         </a>
-        <a class="m-wrap flex-box">
+        <a href="http://vip.bcfxad.com" class="m-wrap flex-box">
           <div class="m-w-a">
             <img src="/static/img/icons/phone.png">
           </div>
@@ -156,7 +156,6 @@
     margin:2px;
   }
   .au_bd div span.tm{
-    color:#0ccfb0;
     font-size:16px;
     margin:2px;
   }

@@ -14,6 +14,7 @@ import mIntro from '@/components/mobile/product/intro'
 import mApply from '@/components/mobile/apply'
 import mLogin from '@/components/mobile/login'
 import mDetail from '@/components/mobile/detail'
+import mMessage from '@/components/mobile/message'
 Vue.use(Router)
 
 export default new Router({
@@ -81,6 +82,11 @@ export default new Router({
           path: 'detail',
           name: 'mDetail',
           component: mDetail
+        },
+        {
+          path: 'message',
+          name: 'mMessage',
+          component: mMessage
         }
       ]
     }

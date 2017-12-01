@@ -1,7 +1,7 @@
 <template>
   <div class="m-main login-pg">
       <div class="bg-banner bg-theme">
-          <img src="/static/img/icons/applylogo.png">
+          <img src="/static/img/icons/lock.png">
         企业登录入口
         <div class="arrow-up"></div>
       </div>
@@ -76,9 +76,9 @@
     color:grey;
   }
   .popup{
-    top: 280px;
+    top: 210px;
     left: 40%;
-    margin-left: -122px;
+    margin-left: -116px;
     position: fixed;
     background: white;
     padding: 30px 15px;
@@ -88,6 +88,17 @@
     box-shadow: 0 2px 37px rgba(73, 144, 132, 0.3);
     -webkit-animation: moveUp 0.4s ease;
     animation: moveUp 0.4s ease;
+  }
+  @keyframes moveUp {
+    from {
+      top: 230px;
+      opacity: 0;
+    }
+
+    to {
+      top: 210px;
+      opacity: 1;
+    }
   }
   .cover{
     position:fixed;

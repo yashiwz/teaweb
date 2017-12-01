@@ -1,13 +1,14 @@
 <template>
   <div class="m-main">
-    <div class="p12 intro-top bg-theme">
-      <div class="product-tt">【享系列】享时光</div><!--产品名-->
+    <div class="intro-top bg-theme">
+
       <div class="flex-box ">
         <div class="flex-hd">
           <img src="/static/img/product/u366.jpg">
         </div>
         <div class="flex-bd">
             <div><!--产品属性-->
+              <div class="product-tt">【享系列】享时光</div><!--产品名-->
               <span>品牌</span> 勐海巅味号茶业<br>
               <span>产地</span> 云南省 <span>年份</span> 2016<br>
               <span>工艺</span> 离地发酵<span>茶性</span> 熟普<br>
@@ -20,8 +21,8 @@
 
     <div class="moment">
       <div class="msg-pl">
-        <a class="btn plain theme">消息列表
-          <div class="noti_bubble">3</div>
+        <a href="#/mobile/message" class="btn plain theme">消息列表
+          <div class="noti_bubble">6</div>
         </a>
       </div>
       <div>
@@ -116,19 +117,18 @@
   .moment .reply a.del{
     margin-left: 10px;
     color: grey;
-    font-size: 12px;
   }
   .moment .reply a.del:hover{
     color:#fa5555
   }
   .moment .reply span.stat{
     color:#0ccfb0;
-    font-size:12px;
+    margin-left: 10px;
   }
   .moment .reply a.stat{
     color: grey;
-    font-size:12px;
     text-decoration: underline;
+    margin-left: 10px;
   }
   .moment .reply a.stat:hover{
    color: black;

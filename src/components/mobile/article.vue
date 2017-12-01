@@ -16,6 +16,7 @@
           </div>
         </div>
     </section>
+    <p class="text-center pt12"><a data-v-8cffebc2="" href="#/mobile/index" class="btn info"><i class="el-icon-arrow-left"></i> 返回主页</a></p>
     <section class="bt_nav">
       <a class="c3" href="#/mobile/index">
         <img src="/static/img/icons/n_sch.png">

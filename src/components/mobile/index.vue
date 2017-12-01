@@ -11,7 +11,7 @@
       <div class="flex-bd">
         <div class="sch">
           <el-input
-            placeholder="请输入内容"
+            placeholder="搜索商品"
             prefix-icon="el-icon-search"
             v-model="searchString">
           </el-input>
@@ -23,15 +23,15 @@
     </div>
     <section class="m-icons">
       <a class="c3" href="#/mobile/inform">
-        <img src="/static/img/icons/report.jpg">
+        <img src="/static/img/icons/report.png">
         <div class="tt">打假举报</div>
       </a>
       <a class="c3" href="#/mobile/apply">
-        <img src="/static/img/icons/add.jpg">
+        <img src="/static/img/icons/add.png">
         <div class="tt">入驻申请</div>
       </a>
       <a class="c3" href="#/mobile/report">
-        <img src="/static/img/icons/intro.jpg">
+        <img src="/static/img/icons/intro.png">
         <div class="tt">茶精灵介绍</div>
       </a>
     </section>
@@ -134,25 +134,24 @@
   }
   .m-icons{
     background: white;
-    padding:6px 0;
     margin-bottom:12px;
   }
 
   .m-icons .c3{
     text-align: center;
     vertical-align: top;
-
-
-    padding: 6px;
+    padding: 12px 6px;
+  }
+  .m-icons .c3:hover{
   }
   .m-icons .tt{
     font-size: 15px;
     line-height: 17px;
-    margin: 6px 0;
+    margin: 10px 0 5px;
   }
   .m-icons .c3 img{
-    max-width: 50px;
-    width: 76%;
+    max-width: 60px;
+    width: 70%;
   }
   .articles{
     background: white;
@@ -163,10 +162,10 @@ width:100%;
   }
   .scan-pl a{
     display: block;
-    padding: 16px 12px 16px 8px;
+    padding: 14px 12px 14px 6px;
   }
   .scan-pl img{
-    width:28px;
+    width: 40px
   }
 
   .scan-pl .sch{
