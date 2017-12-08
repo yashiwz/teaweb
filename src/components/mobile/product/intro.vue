@@ -7,13 +7,10 @@
           <img src="/static/img/product/u366.jpg">
         </div>
         <div class="flex-bd">
-
             <div>
-
               <span>品牌</span> 勐海巅味号茶业<br>
               <span>产地</span> 云南省 <span>年份</span> 2016<br>
               <span>工艺</span> 离地发酵<span>茶性</span> 熟普<br>
-
               <span>扫描次数</span> <span class="time">13938</span> 次<br>
               <span>自定义</span> 自定义 <br>
             </div>
@@ -21,7 +18,6 @@
       </div>
     </div>
     <div class="intro">
-
       <div>
         <div class="st"><img src="/static/img/icons/tea.png">第1泡</div>
         <div>所谓“一泡水”就是指洗涤茶叶xxxx</div>

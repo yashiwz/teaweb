@@ -21,7 +21,7 @@
           <div>防伪信息第<span class="tm tx-thm">333</span>次扫描查询</div>
         </div>
       </section>
-      <h4 class="tt-pl">系统认证</h4>
+      <h4 class="tt-pl">企业信息</h4>
       <section class="system p12">
         <div>企业名称：勐海巅味号茶业有限公司</div>
         <div>营业执照号码：91532822329265063L</div>
